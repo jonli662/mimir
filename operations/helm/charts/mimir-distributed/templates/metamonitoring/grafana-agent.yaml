@@ -42,7 +42,8 @@ spec:
       securityContext:
         {{- . | toYaml | nindent 8 }}
   {{- end }}
-
+      resources:
+        {{- .resources | toYaml | nindent 8 }}
   logs:
     instanceSelector:
       matchLabels:

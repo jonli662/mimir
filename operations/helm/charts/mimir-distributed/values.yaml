@@ -2971,7 +2971,7 @@ metaMonitoring:
     #    repo: docker.io
     #    image: grafana/agent
     #    tag: v0.29.0
-
+    resources: {}
     # -- Controls whether to install the Grafana Agent Operator and its CRDs.
     # Note that helm will not install CRDs if this flag is enabled during an upgrade.
     # In that case install the CRDs manually from https://github.com/grafana/agent/tree/main/production/operator/crds
